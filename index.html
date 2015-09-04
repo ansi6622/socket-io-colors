@@ -19,7 +19,7 @@
       <input id="m" autocomplete="off" /><button>Send</button>
     </form>
 
-    <button>TESTING!</button>
+    <button>CLICK ME TO CHANGE THE BG COLOR</button>
 
       <script src="/socket.io/socket.io.js"></script>
       <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
@@ -58,9 +58,7 @@
           $("body").css("background-color", color);
         })
           
-        // receive messages sent from the browser
         socket.on('chat message', function(msg){
-            // append a <li> to the message window with content
             $('#messages').append($('<li>').text(msg));
         });
       </script>
